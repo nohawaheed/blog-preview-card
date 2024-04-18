@@ -1,0 +1,142 @@
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+  --fw-small: 0.75rem;
+  --fw-medium: 0.875rem;
+  --fw-regular: 1rem;
+  --fw-header: 1.25rem;
+  --fw-header-large: 1.5rem;
+}
+
+@font-face {
+  font-family: Figtree;
+  src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--yellow);
+  font-family: Figtree, sans-serif;
+}
+
+.card {
+  background-color: var(--white);
+  max-width: 20.4375rem;
+  height: auto;
+  border-radius: 1.25em;
+  border: 1px solid var(--black);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  box-shadow: 8px 8px 0px var(--black);
+  p,
+  h1 {
+    margin: 0;
+    padding-top: 0.75rem;
+  }
+
+  .date-published {
+    font-size: var(--fw-medium);
+  }
+
+  h1 {
+    font-size: var(--fw-header);
+    font-weight: 800;
+  }
+
+  .description {
+    color: var(--grey);
+    font-size: var(--fw-medium);
+  }
+
+  .image {
+    border-radius: 0.625em;
+    min-height: 200px;
+    width: auto;
+    object-fit: cover;
+  }
+
+  .content {
+    padding: 1.5em 0;
+  }
+
+  .author {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.75em;
+    img {
+      max-width: 2rem;
+      max-height: 2rem;
+    }
+    h2 {
+      margin: 0;
+      font-size: var(--fw-medium);
+    }
+  }
+  strong {
+    border-radius: 0.25em;
+    background-color: var(--yellow);
+    padding: 0.5em 1em;
+    display: inline-block;
+    font-size: var(--fw-small);
+  }
+
+  strong,
+  h2 {
+    font-weight: 800;
+  }
+  &:hover {
+    cursor: pointer;
+    box-shadow: 16px 16px 0px var(--black);
+    h1 {
+      color: var(--yellow);
+    }
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    max-width: 24rem;
+    strong {
+      font-size: var(--fw-medium);
+    }
+    h1 {
+      font-size: var(--fw-header-large);
+    }
+    .description {
+      font-size: var(--fw-regular);
+    }
+  }
+}
+@media screen and (max-width: 350px) {
+  .card {
+    max-width: 18rem;
+  }
+}
