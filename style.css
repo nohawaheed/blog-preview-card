@@ -50,6 +50,7 @@ body {
   justify-content: space-between;
   padding: 1.5rem;
   box-shadow: 8px 8px 0px var(--black);
+  line-height: 1.5rem;
   p,
   h1 {
     margin: 0;
@@ -98,7 +99,7 @@ body {
   strong {
     border-radius: 0.25em;
     background-color: var(--yellow);
-    padding: 0.5em 1em;
+    padding: 0.25em 0.75em;
     display: inline-block;
     font-size: var(--fw-small);
   }
@@ -126,6 +127,7 @@ footer {
     max-width: 24rem;
     strong {
       font-size: var(--fw-medium);
+      padding: 0.5em 1em;
     }
     h1 {
       font-size: var(--fw-header-large);
