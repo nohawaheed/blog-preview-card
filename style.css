@@ -42,6 +42,7 @@ body {
 .card {
   background-color: var(--white);
   max-width: 20.4375rem;
+  min-height: 522px;
   height: auto;
   border-radius: 1.25em;
   border: 1px solid var(--black);
