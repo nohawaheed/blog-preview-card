@@ -43,7 +43,6 @@ body {
   background-color: var(--white);
   max-width: 20.4375rem;
   min-height: 522px;
-  height: auto;
   border-radius: 1.25em;
   border: 1px solid var(--black);
   display: flex;
@@ -52,6 +51,7 @@ body {
   padding: 1.5rem;
   box-shadow: 8px 8px 0px var(--black);
   line-height: 1.5rem;
+  margin: 1.5rem;
   p,
   h1 {
     margin: 0;
@@ -92,12 +92,16 @@ body {
       max-width: 2rem;
       max-height: 2rem;
     }
-    h2 {
-      margin: 0;
+    p {
       font-size: var(--fw-medium);
     }
   }
-  strong {
+  .category,
+  .author-name {
+    font-weight: 800;
+    padding-top: unset;
+  }
+  .category {
     border-radius: 0.25em;
     background-color: var(--yellow);
     padding: 0.25em 0.75em;
@@ -105,10 +109,6 @@ body {
     font-size: var(--fw-small);
   }
 
-  strong,
-  h2 {
-    font-weight: 800;
-  }
   &:hover {
     cursor: pointer;
     box-shadow: 16px 16px 0px var(--black);
@@ -116,11 +116,6 @@ body {
       color: var(--yellow);
     }
   }
-}
-
-footer {
-  position: absolute;
-  bottom: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -137,8 +132,8 @@ footer {
     }
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 360px) {
   .card {
-    max-width: 18rem;
+    max-width: 17rem;
   }
 }
