@@ -128,7 +128,6 @@ footer {
     max-width: 24rem;
     strong {
       font-size: var(--fw-medium);
-      padding: 0.5em 1em;
     }
     h1 {
       font-size: var(--fw-header-large);
